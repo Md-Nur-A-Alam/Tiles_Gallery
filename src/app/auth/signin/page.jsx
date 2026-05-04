@@ -6,8 +6,10 @@ import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 import { authClient } from '@/lib/auth-client';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const SignIn = () => {
+    const router = useRouter();
 
     const {
         register,
@@ -26,6 +28,7 @@ const SignIn = () => {
                 toast.error(error.message || "Login failed");
             } else {
                 toast.success("Login successful!");
+                router.push('/');
             }
 
         } catch (err) {

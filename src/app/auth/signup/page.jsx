@@ -8,8 +8,10 @@ import { FcGoogle } from 'react-icons/fc';
 import { toast } from 'react-toastify';
 import { useForm } from 'react-hook-form';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const SignUpPage = () => {
+    const router = useRouter();
 
     const {
         register,
@@ -33,6 +35,7 @@ const SignUpPage = () => {
                 toast.error(error.message || "Signup failed");
             } else {
                 toast.success("Account created successfully!");
+                router.push('/auth/signin');
             }
 
         } catch {

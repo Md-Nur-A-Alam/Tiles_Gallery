@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "server": "json-server --watch db.json --port 5004"
   },
   "dependencies": {
     "@better-auth/mongo-adapter": "^1.6.9",
