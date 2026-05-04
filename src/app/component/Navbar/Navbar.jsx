@@ -1,16 +1,17 @@
-import { Link } from 'lucide-react';
+import Link from 'next/link'
 import React from 'react';
 
 const Navbar = () => {
 
     const links = 
         <>
-            <Link href='/'>Home</Link>
-            <Link href='/'>All Tiles</Link>
-            <Link href='/'>Home</Link>
+            <li><Link href='/'>Home</Link></li>
+            <li><Link href='/tiles'>All Tiles</Link></li>
+            <li><Link href='/profile'>My Profile</Link></li>
         </>
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className='bg-base-200/40 shadow-sm sticky top-0 left-0 backdrop-blur-md '>
+            <div className="navbar container mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -18,11 +19,11 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex="-1"
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        className="menu menu-sm dropdown-content bg-base-300/50 backdrop-blur-md rounded-box z-1 mt-3 w-52 p-2 shadow">
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <a className="btn btn-ghost text-xl">Tiles Gallery</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -30,8 +31,9 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <Link href='/auth/signin' className="btn">Sign In</Link>
             </div>
+        </div>
         </div>
     );
 };
