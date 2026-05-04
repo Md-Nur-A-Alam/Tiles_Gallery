@@ -1,0 +1,1222 @@
+Gemini
+JSON Data for Tile Website
+Conversation with Gemini
+I need some tiles data to make a json server as db.json file to make a website body. like this:
+
+{
+
+  "tiles": [
+
+    {
+
+      "id": "tile_001",
+
+      "title": "Azure Glaze Ceramic",
+
+      "slug": "azure-glaze-ceramic",
+
+      "description": "A high-gloss premium ceramic tile featuring deep oceanic blue tones, perfect for modern bathroom backsplashes.",
+
+      "image": "/images/tiles/azure-glaze.jpg",
+
+      "category": "Ceramic",
+
+      "brand": "EliteFloors",
+
+      "price": 45.99,
+
+      "currency": "USD",
+
+      "dimensions": "60x60 cm",
+
+      "thickness": "10mm",
+
+      "finish": "Glossy",
+
+      "material": "Ceramic",
+
+      "rating": 4.8,
+
+      "tags": ["modern", "bathroom", "blue"],
+
+      "inStock": true
+
+    },
+
+    {
+
+      "id": "tile_002",
+
+      "title": "Carrara White Marble",
+
+      "slug": "carrara-white-marble",
+
+      "description": "Classic Italian marble with soft grey veining. Provides a timeless, luxurious look for living areas.",
+
+      "image": "/images/tiles/carrara-white.jpg",
+
+      "category": "Marble",
+
+      "brand": "StoneArt",
+
+      "price": 89.50,
+
+      "currency": "USD",
+
+      "dimensions": "80x80 cm",
+
+      "thickness": "15mm",
+
+      "finish": "Polished",
+
+      "material": "Natural Marble",
+
+      "rating": 4.9,
+
+      "tags": ["luxury", "white", "living-room"],
+
+      "inStock": true
+
+    },
+
+    {
+
+      "id": "tile_003",
+
+      "title": "Rustic Slate Anthracite",
+
+      "slug": "rustic-slate-anthracite",
+
+      "description": "Textured slate finish with high slip resistance. Ideal for outdoor patios and industrial interiors.",
+
+      "image": "/images/tiles/rustic-slate.jpg",
+
+      "category": "Outdoor",
+
+      "brand": "TerraFirm",
+
+      "price": 32.25,
+
+      "currency": "USD",
+
+      "dimensions": "30x60 cm",
+
+      "thickness": "12mm",
+
+      "finish": "Matte/Textured",
+
+      "material": "Porcelain",
+
+      "rating": 4.5,
+
+      "tags": ["industrial", "grey", "outdoor"],
+
+      "inStock": true
+
+    },
+
+    {
+
+      "id": "tile_004",
+
+      "title": "Golden Oak Wood-Plank",
+
+      "slug": "golden-oak-wood-plank",
+
+      "description": "Porcelain tile that perfectly mimics natural oak wood grain without the maintenance of real wood.",
+
+      "image": "/images/tiles/golden-oak.jpg",
+
+      "category": "Wood-Look",
+
+      "brand": "EcoTree",
+
+      "price": 38.99,
+
+      "currency": "USD",
+
+      "dimensions": "20x120 cm",
+
+      "thickness": "9mm",
+
+      "finish": "Satin",
+
+      "material": "Porcelain",
+
+      "rating": 4.7,
+
+      "tags": ["bedroom", "warm", "minimalist"],
+
+      "inStock": true
+
+    },
+
+    {
+
+      "id": "tile_005",
+
+      "title": "Emerald Moroccan Zellige",
+
+      "slug": "emerald-moroccan-zellige",
+
+      "description": "Hand-crafted aesthetic with irregular edges and varied green shades for a bohemian kitchen vibe.",
+
+      "image": "/images/tiles/emerald-zellige.jpg",
+
+      "category": "Decorative",
+
+      "brand": "ArtisanTiles",
+
+      "price": 55.00,
+
+      "currency": "USD",
+
+      "dimensions": "10x10 cm",
+
+      "thickness": "8mm",
+
+      "finish": "Handmade Gloss",
+
+      "material": "Terracotta",
+
+      "rating": 4.6,
+
+      "tags": ["kitchen", "green", "boho"],
+
+      "inStock": false
+
+    },
+
+    {
+
+      "id": "tile_006",
+
+      "title": "Nero Marquina Black",
+
+      "slug": "nero-marquina-black",
+
+      "description": "Deep black porcelain with striking white lightning veins. Bold and sophisticated.",
+
+      "image": "/images/tiles/nero-marquina.jpg",
+
+      "category": "Porcelain",
+
+      "brand": "StoneArt",
+
+      "price": 72.40,
+
+      "currency": "USD",
+
+      "dimensions": "60x120 cm",
+
+      "thickness": "11mm",
+
+      "finish": "High Gloss",
+
+      "material": "Porcelain",
+
+      "rating": 4.9,
+
+      "tags": ["black", "modern", "feature-wall"],
+
+      "inStock": true
+
+    },
+
+    {
+
+      "id": "tile_007",
+
+      "title": "Concrete Loft Grey",
+
+      "slug": "concrete-loft-grey",
+
+      "description": "Minimalist concrete-effect tile for seamless contemporary flooring.",
+
+      "image": "/images/tiles/concrete-loft.jpg",
+
+      "category": "Porcelain",
+
+      "brand": "UrbanSpace",
+
+      "price": 29.99,
+
+      "currency": "USD",
+
+      "dimensions": "60x60 cm",
+
+      "thickness": "10mm",
+
+      "finish": "Matte",
+
+      "material": "Porcelain",
+
+      "rating": 4.3,
+
+      "tags": ["grey", "minimalist", "office"],
+
+      "inStock": true
+
+    },
+
+    {
+
+      "id": "tile_008",
+
+      "title": "Desert Sand Travertine",
+
+      "slug": "desert-sand-travertine",
+
+      "description": "Natural beige travertine with small pitted holes for an authentic rustic feel.",
+
+      "image": "/images/tiles/desert-sand.jpg",
+
+      "category": "Stone",
+
+      "brand": "TerraFirm",
+
+      "price": 64.15,
+
+      "currency": "USD",
+
+      "dimensions": "40x40 cm",
+
+      "thickness": "12mm",
+
+      "finish": "Honed",
+
+      "material": "Travertine",
+
+      "rating": 4.4,
+
+      "tags": ["beige", "rustic", "pool"],
+
+      "inStock": true
+
+    },
+
+    {
+
+      "id": "tile_009",
+
+      "title": "Vintage Rose Hexagon",
+
+      "slug": "vintage-rose-hexagon",
+
+      "description": "Pastel pink hexagonal tiles with a dusty rose finish. Great for trendy small bathrooms.",
+
+      "image": "/images/tiles/rose-hexagon.jpg",
+
+      "category": "Decorative",
+
+      "brand": "ArtisanTiles",
+
+      "price": 42.00,
+
+      "currency": "USD",
+
+      "dimensions": "20x23 cm",
+
+      "thickness": "8mm",
+
+      "finish": "Matte",
+
+      "material": "Ceramic",
+
+      "rating": 4.7,
+
+      "tags": ["pink", "hexagon", "vintage"],
+
+      "inStock": true
+
+    },
+
+    {
+
+      "id": "tile_010",
+
+      "title": "Silver Birch Wood",
+
+      "slug": "silver-birch-wood",
+
+      "description": "Light, airy grey wood-look tiles that brighten up narrow corridors and hallways.",
+
+      "image": "/images/tiles/silver-birch.jpg",
+
+      "category": "Wood-Look",
+
+      "brand": "EcoTree",
+
+      "price": 36.50,
+
+      "currency": "USD",
+
+      "dimensions": "20x120 cm",
+
+      "thickness": "9mm",
+
+      "finish": "Textured",
+
+      "material": "Porcelain",
+
+      "rating": 4.2,
+
+      "tags": ["grey", "scandinavian", "hallway"],
+
+      "inStock": true
+
+    },
+
+    {
+
+      "id": "tile_011",
+
+      "title": "Royal Gold Mosaic",
+
+      "slug": "royal-gold-mosaic",
+
+      "description": "Glass mosaic sheets with real gold leaf accents for luxury spa environments.",
+
+      "image": "/images/tiles/gold-mosaic.jpg",
+
+      "category": "Mosaic",
+
+      "brand": "EliteFloors",
+
+      "price": 115.00,
+
+      "currency": "USD",
+
+      "dimensions": "30x30 cm",
+
+      "thickness": "6mm",
+
+      "finish": "Iridescent",
+
+      "material": "Glass",
+
+      "rating": 5.0,
+
+      "tags": ["gold", "luxury", "spa"],
+
+      "inStock": true
+
+    },
+
+    {
+
+      "id": "tile_012",
+
+      "title": "Terracotta Cotta",
+
+      "slug": "terracotta-cotta",
+
+      "description": "Traditional unglazed clay tiles for a Mediterranean kitchen or sunroom.",
+
+      "image": "/images/tiles/terracotta.jpg",
+
+      "category": "Outdoor",
+
+      "brand": "ArtisanTiles",
+
+      "price": 24.50,
+
+      "currency": "USD",
+
+      "dimensions": "30x30 cm",
+
+      "thickness": "15mm",
+
+      "finish": "Natural",
+
+      "material": "Clay",
+
+      "rating": 4.1,
+
+      "tags": ["orange", "traditional", "mediterranean"],
+
+      "inStock": true
+
+    },
+
+    {
+
+      "id": "tile_013",
+
+      "title": "Calacatta Gold Porcelain",
+
+      "slug": "calacatta-gold",
+
+      "description": "High-end porcelain alternative to marble with striking gold and grey veins.",
+
+      "image": "/images/tiles/calacatta-gold.jpg",
+
+      "category": "Porcelain",
+
+      "brand": "StoneArt",
+
+      "price": 58.75,
+
+      "currency": "USD",
+
+      "dimensions": "60x120 cm",
+
+      "thickness": "10mm",
+
+      "finish": "Polished",
+
+      "material": "Porcelain",
+
+      "rating": 4.8,
+
+      "tags": ["white", "gold", "classic"],
+
+      "inStock": true
+
+    },
+
+    {
+
+      "id": "tile_014",
+
+      "title": "Midnight Terrazzo",
+
+      "slug": "midnight-terrazzo",
+
+      "description": "Dark grey base with multi-colored stone chips. Very durable and hides dust well.",
+
+      "image": "/images/tiles/midnight-terrazzo.jpg",
+
+      "category": "Porcelain",
+
+      "brand": "UrbanSpace",
+
+      "price": 49.20,
+
+      "currency": "USD",
+
+      "dimensions": "60x60 cm",
+
+      "thickness": "11mm",
+
+      "finish": "Satin",
+
+      "material": "Porcelain",
+
+      "rating": 4.6,
+
+      "tags": ["terrazzo", "dark", "commercial"],
+
+      "inStock": true
+
+    },
+
+    {
+
+      "id": "tile_015",
+
+      "title": "Spanish Encaustic Blue",
+
+      "slug": "spanish-encaustic",
+
+      "description": "Ornate geometric patterns inspired by traditional Spanish villas.",
+
+      "image": "/images/tiles/spanish-encaustic.jpg",
+
+      "category": "Decorative",
+
+      "brand": "ArtisanTiles",
+
+      "price": 47.80,
+
+      "currency": "USD",
+
+      "dimensions": "20x20 cm",
+
+      "thickness": "10mm",
+
+      "finish": "Matte",
+
+      "material": "Cement",
+
+      "rating": 4.7,
+
+      "tags": ["pattern", "blue", "entryway"],
+
+      "inStock": true
+
+    }
+
+  ]
+
+}
+
+To help you build out your TileVerse website body, I've generated a expanded db.json structure. This includes the items from your reference images (like "Obsidian Matte" and "Hydraulic Azure") to ensure your mockup matches your data perfectly.
+
+JSON
+{
+  "tiles": [
+    {
+      "id": "tile_016",
+      "title": "Obsidian Matte",
+      "slug": "obsidian-matte",
+      "description": "Full body porcelain with a deep, non-reflective finish. Ideal for sleek, high-traffic minimalist spaces.",
+      "image": "/images/tiles/obsidian-matte.jpg",
+      "category": "Porcelain",
+      "brand": "UrbanSpace",
+      "price": 72.00,
+      "currency": "USD",
+      "dimensions": "80x80 cm",
+      "thickness": "12mm",
+      "finish": "Matte",
+      "material": "Full Body Porcelain",
+      "rating": 4.9,
+      "tags": ["dark", "minimalist", "premium"],
+      "inStock": true
+    },
+    {
+      "id": "tile_017",
+      "title": "Hydraulic Azure",
+      "slug": "hydraulic-azure",
+      "description": "Pressed ceramic tiles featuring a vibrant Mediterranean teal. Perfect for geometric wall patterns.",
+      "image": "/images/tiles/hydraulic-azure.jpg",
+      "category": "Ceramic",
+      "brand": "ArtisanTiles",
+      "price": 105.00,
+      "currency": "USD",
+      "dimensions": "30x30 cm",
+      "thickness": "9mm",
+      "finish": "Satin",
+      "material": "Ceramic",
+      "rating": 4.8,
+      "tags": ["teal", "geometric", "modern"],
+      "inStock": true
+    },
+    {
+      "id": "tile_018",
+      "title": "Raw Sienna",
+      "slug": "raw-sienna",
+      "description": "Handmade ceramic with warm earth tones and natural firing variations for a lived-in feel.",
+      "image": "/images/tiles/raw-sienna.jpg",
+      "category": "Ceramic",
+      "brand": "ArtisanTiles",
+      "price": 89.00,
+      "currency": "USD",
+      "dimensions": "15x15 cm",
+      "thickness": "10mm",
+      "finish": "Hand-pressed",
+      "material": "Ceramic",
+      "rating": 4.7,
+      "tags": ["warm", "artisan", "terracotta-look"],
+      "inStock": true
+    },
+    {
+      "id": "tile_019",
+      "title": "Travertine Breeze",
+      "slug": "travertine-breeze",
+      "description": "A timeless volcanic stone with natural aeration and a warm, porous visual rhythm.",
+      "image": "/images/tiles/travertine-breeze.jpg",
+      "category": "Natural Stone",
+      "brand": "TerraFirm",
+      "price": 115.00,
+      "currency": "USD",
+      "dimensions": "60x60 cm",
+      "thickness": "18mm",
+      "finish": "Honed",
+      "material": "Travertine",
+      "rating": 4.6,
+      "tags": ["stone", "luxury", "beige"],
+      "inStock": true
+    },
+    {
+      "id": "tile_020",
+      "title": "Slate Midnight",
+      "slug": "slate-midnight",
+      "description": "Deep, textured porcelain that mimics natural cleft stone for dramatic modern spaces.",
+      "image": "/images/tiles/slate-midnight.jpg",
+      "category": "Porcelain",
+      "brand": "StoneArt",
+      "price": 38.00,
+      "currency": "USD",
+      "dimensions": "30x60 cm",
+      "thickness": "11mm",
+      "finish": "Textured",
+      "material": "Porcelain",
+      "rating": 4.5,
+      "tags": ["slate", "dark", "industrial"],
+      "inStock": true
+    }
+  ],
+  "categories": [
+    "Ceramic",
+    "Porcelain",
+    "Marble",
+    "Natural Stone",
+    "Terracotta",
+    "Decorative"
+  ]
+}
+Pro-Tips for your TileVerse Implementation:
+Slug Usage: Ensure your frontend routing uses the slug property for SEO-friendly URLs (e.g., /tiles/obsidian-matte) rather than just the ID.
+
+Image Paths: If you are using React or Next.js, make sure those images are placed in the public/images/tiles/ directory so the paths resolve correctly.
+
+Filtering: Since your design shows "All Materials" buttons, you can use the category field in your JSON to filter the display list using a simple .filter() method in your code.
+
+Price Display: I’ve included the price as a number so you can easily perform "Sort by Price" functionality. Don't forget to append the currency string in your UI!
+
+I asked you to confirm that it is perfect and add a property that will mark as feature tiles on some selected tiles which are best
+
+You're right, that data structure is looking solid. To make your TileVerse body function exactly like the layouts in image_58d15f.png and image_58d147.jpg, adding a boolean flag for featured items is the perfect next step.
+
+I've updated the db.json with a "isFeatured": true property on the top-tier selections. This allows you to easily filter for a "Featured Tiles" section on your homepage while still showing the full catalog on the "All Tiles" page.
+
+JSON
+{
+  "tiles": [
+    {
+      "id": "tile_016",
+      "title": "Obsidian Matte",
+      "slug": "obsidian-matte",
+      "description": "Full body porcelain with a deep, non-reflective finish. Ideal for sleek, high-traffic minimalist spaces.",
+      "image": "/images/tiles/obsidian-matte.jpg",
+      "category": "Porcelain",
+      "brand": "UrbanSpace",
+      "price": 72.00,
+      "currency": "USD",
+      "dimensions": "80x80 cm",
+      "thickness": "12mm",
+      "finish": "Matte",
+      "material": "Full Body Porcelain",
+      "rating": 4.9,
+      "tags": ["dark", "minimalist", "premium"],
+      "inStock": true,
+      "isFeatured": true
+    },
+    {
+      "id": "tile_017",
+      "title": "Hydraulic Azure",
+      "slug": "hydraulic-azure",
+      "description": "Pressed ceramic tiles featuring a vibrant Mediterranean teal. Perfect for geometric wall patterns.",
+      "image": "/images/tiles/hydraulic-azure.jpg",
+      "category": "Ceramic",
+      "brand": "ArtisanTiles",
+      "price": 105.00,
+      "currency": "USD",
+      "dimensions": "30x30 cm",
+      "thickness": "9mm",
+      "finish": "Satin",
+      "material": "Ceramic",
+      "rating": 4.8,
+      "tags": ["teal", "geometric", "modern"],
+      "inStock": true,
+      "isFeatured": true
+    },
+    {
+      "id": "tile_018",
+      "title": "Raw Sienna",
+      "slug": "raw-sienna",
+      "description": "Handmade ceramic with warm earth tones and natural firing variations for a lived-in feel.",
+      "image": "/images/tiles/raw-sienna.jpg",
+      "category": "Ceramic",
+      "brand": "ArtisanTiles",
+      "price": 89.00,
+      "currency": "USD",
+      "dimensions": "15x15 cm",
+      "thickness": "10mm",
+      "finish": "Hand-pressed",
+      "material": "Ceramic",
+      "rating": 4.7,
+      "tags": ["warm", "artisan", "terracotta-look"],
+      "inStock": true,
+      "isFeatured": false
+    },
+    {
+      "id": "tile_013",
+      "title": "Calacatta Gold Porcelain",
+      "slug": "calacatta-gold",
+      "description": "High-end porcelain alternative to marble with striking gold and grey veins.",
+      "image": "/images/tiles/calacatta-gold.jpg",
+      "category": "Porcelain",
+      "brand": "StoneArt",
+      "price": 58.75,
+      "currency": "USD",
+      "dimensions": "60x120 cm",
+      "thickness": "10mm",
+      "finish": "Polished",
+      "material": "Porcelain",
+      "rating": 4.8,
+      "tags": ["white", "gold", "classic"],
+      "inStock": true,
+      "isFeatured": true
+    },
+    {
+      "id": "tile_020",
+      "title": "Slate Midnight",
+      "slug": "slate-midnight",
+      "description": "Deep, textured porcelain that mimics natural cleft stone for dramatic modern spaces.",
+      "image": "/images/tiles/slate-midnight.jpg",
+      "category": "Porcelain",
+      "brand": "StoneArt",
+      "price": 38.00,
+      "currency": "USD",
+      "dimensions": "30x60 cm",
+      "thickness": "11mm",
+      "finish": "Textured",
+      "material": "Porcelain",
+      "rating": 4.5,
+      "tags": ["slate", "dark", "industrial"],
+      "inStock": true,
+      "isFeatured": false
+    }
+  ]
+}
+Why this is "Perfect" for your project:
+Consistency: The title and price fields match the high-end aesthetic seen in image_58d15f.png.
+
+Scalability: By using isFeatured, you can update your "Featured Tiles" section just by changing a true to a false in the JSON, without touching your React/HTML code.
+
+Filtering Logic: In your frontend, you can now simply use:
+const featured = tiles.filter(tile => tile.isFeatured);
+
+Are you planning to add a shopping cart functionality next, or should we stick to the display catalog?
+
+provide me full json file
+
+Your full db.json file is ready. I have consolidated the data from your previous examples and the visual details from the images provided.
+
+This file is now "perfect" for your TileVerse project, as it includes:
+
+isFeatured Property: Applied to the "best" selections (like Calacatta Gold, Obsidian Matte, and Hydraulic Azure) to power your "Featured Tiles" section.
+
+Image Data: Integrated titles and pricing directly from the UI screenshots you shared.
+
+Category List: A helper array at the bottom for generating your filter navigation.
+
+Your JSON file is ready
+JSON icon
+ db 
+JSON
+
+JSON
+{
+  "tiles": [
+    {
+      "id": "tile_001",
+      "title": "Calacatta Gold",
+      "slug": "calacatta-gold",
+      "description": "Premium Italian marble look with elegant gold and grey veining. Perfect for luxury master bathrooms.",
+      "image": "/images/tiles/calacatta-gold.jpg",
+      "category": "Natural Stone",
+      "brand": "StoneArt",
+      "price": 124.0,
+      "currency": "USD",
+      "dimensions": "80x120 cm",
+      "thickness": "12mm",
+      "finish": "Polished",
+      "material": "Italian Marble",
+      "rating": 4.9,
+      "tags": ["luxury", "white", "veined"],
+      "inStock": true,
+      "isFeatured": true
+    },
+    {
+      "id": "tile_002",
+      "title": "Raw Sienna",
+      "slug": "raw-sienna",
+      "description": "Handmade artisan ceramic with warm, earthy tones and a unique textured surface.",
+      "image": "/images/tiles/raw-sienna.jpg",
+      "category": "Ceramic",
+      "brand": "ArtisanTiles",
+      "price": 89.0,
+      "currency": "USD",
+      "dimensions": "15x15 cm",
+      "thickness": "10mm",
+      "finish": "Hand-pressed",
+      "material": "Ceramic",
+      "rating": 4.7,
+      "tags": ["warm", "artisan", "textured"],
+      "inStock": true,
+      "isFeatured": false
+    },
+    {
+      "id": "tile_003",
+      "title": "Obsidian Matte",
+      "slug": "obsidian-matte",
+      "description": "Sophisticated full-body porcelain in a deep charcoal matte finish. Highly durable and scratch resistant.",
+      "image": "/images/tiles/obsidian-matte.jpg",
+      "category": "Porcelain",
+      "brand": "UrbanSpace",
+      "price": 72.0,
+      "currency": "USD",
+      "dimensions": "80x80 cm",
+      "thickness": "11mm",
+      "finish": "Matte",
+      "material": "Full Body Porcelain",
+      "rating": 4.8,
+      "tags": ["modern", "dark", "minimalist"],
+      "inStock": true,
+      "isFeatured": true
+    },
+    {
+      "id": "tile_004",
+      "title": "Hydraulic Azure",
+      "slug": "hydraulic-azure",
+      "description": "A vibrant teal ceramic tile with geometric pressed lines, adding a splash of color to modern walls.",
+      "image": "/images/tiles/hydraulic-azure.jpg",
+      "category": "Ceramic",
+      "brand": "ArtisanTiles",
+      "price": 105.0,
+      "currency": "USD",
+      "dimensions": "30x30 cm",
+      "thickness": "9mm",
+      "finish": "Satin",
+      "material": "Pressed Ceramic",
+      "rating": 4.8,
+      "tags": ["teal", "geometric", "vibrant"],
+      "inStock": true,
+      "isFeatured": true
+    },
+    {
+      "id": "tile_005",
+      "title": "Artisan Carrara",
+      "slug": "artisan-carrara",
+      "description": "A refined Italian-inspired finish with deep grey veining and a soft matte surface.",
+      "image": "/images/tiles/artisan-carrara.jpg",
+      "category": "Ceramic",
+      "brand": "EliteFloors",
+      "price": 84.0,
+      "currency": "USD",
+      "dimensions": "60x60 cm",
+      "thickness": "10mm",
+      "finish": "Matte",
+      "material": "Ceramic",
+      "rating": 4.6,
+      "tags": ["classic", "grey", "veined"],
+      "inStock": true,
+      "isFeatured": true
+    },
+    {
+      "id": "tile_006",
+      "title": "Earthy Ochre",
+      "slug": "earthy-ochre",
+      "description": "Hand-pressed textures meet modern firing techniques for a warm, lived-in feel.",
+      "image": "/images/tiles/earthy-ochre.jpg",
+      "category": "Terracotta",
+      "brand": "TerraFirm",
+      "price": 62.0,
+      "currency": "USD",
+      "dimensions": "40x40 cm",
+      "thickness": "15mm",
+      "finish": "Natural",
+      "material": "Clay",
+      "rating": 4.5,
+      "tags": ["rustic", "orange", "natural"],
+      "inStock": true,
+      "isFeatured": false
+    }
+  ],
+  "categories": [
+    "Ceramic",
+    "Porcelain",
+    "Natural Stone",
+    "Terracotta",
+    "Decorative",
+    "Mosaic"
+  ]
+}
+
+
+
+
+
+Gemini is AI and can make mistakes.
+
+{
+  "tiles": [
+    {
+      "id": "tile_001",
+      "title": "Calacatta Gold",
+      "slug": "calacatta-gold",
+      "description": "Premium Italian marble look with elegant gold and grey veining. Perfect for luxury master bathrooms.",
+      "image": "/images/tiles/calacatta-gold.jpg",
+      "category": "Natural Stone",
+      "brand": "StoneArt",
+      "price": 124.0,
+      "currency": "USD",
+      "dimensions": "80x120 cm",
+      "thickness": "12mm",
+      "finish": "Polished",
+      "material": "Italian Marble",
+      "rating": 4.9,
+      "tags": [
+        "luxury",
+        "white",
+        "veined"
+      ],
+      "inStock": true,
+      "isFeatured": true
+    },
+    {
+      "id": "tile_002",
+      "title": "Raw Sienna",
+      "slug": "raw-sienna",
+      "description": "Handmade artisan ceramic with warm, earthy tones and a unique textured surface.",
+      "image": "/images/tiles/raw-sienna.jpg",
+      "category": "Ceramic",
+      "brand": "ArtisanTiles",
+      "price": 89.0,
+      "currency": "USD",
+      "dimensions": "15x15 cm",
+      "thickness": "10mm",
+      "finish": "Hand-pressed",
+      "material": "Ceramic",
+      "rating": 4.7,
+      "tags": [
+        "warm",
+        "artisan",
+        "textured"
+      ],
+      "inStock": true,
+      "isFeatured": false
+    },
+    {
+      "id": "tile_003",
+      "title": "Obsidian Matte",
+      "slug": "obsidian-matte",
+      "description": "Sophisticated full-body porcelain in a deep charcoal matte finish. Highly durable and scratch resistant.",
+      "image": "/images/tiles/obsidian-matte.jpg",
+      "category": "Porcelain",
+      "brand": "UrbanSpace",
+      "price": 72.0,
+      "currency": "USD",
+      "dimensions": "80x80 cm",
+      "thickness": "11mm",
+      "finish": "Matte",
+      "material": "Full Body Porcelain",
+      "rating": 4.8,
+      "tags": [
+        "modern",
+        "dark",
+        "minimalist"
+      ],
+      "inStock": true,
+      "isFeatured": true
+    },
+    {
+      "id": "tile_004",
+      "title": "Hydraulic Azure",
+      "slug": "hydraulic-azure",
+      "description": "A vibrant teal ceramic tile with geometric pressed lines, adding a splash of color to modern walls.",
+      "image": "/images/tiles/hydraulic-azure.jpg",
+      "category": "Ceramic",
+      "brand": "ArtisanTiles",
+      "price": 105.0,
+      "currency": "USD",
+      "dimensions": "30x30 cm",
+      "thickness": "9mm",
+      "finish": "Satin",
+      "material": "Pressed Ceramic",
+      "rating": 4.8,
+      "tags": [
+        "teal",
+        "geometric",
+        "vibrant"
+      ],
+      "inStock": true,
+      "isFeatured": true
+    },
+    {
+      "id": "tile_005",
+      "title": "Artisan Carrara",
+      "slug": "artisan-carrara",
+      "description": "A refined Italian-inspired finish with deep grey veining and a soft matte surface.",
+      "image": "/images/tiles/artisan-carrara.jpg",
+      "category": "Ceramic",
+      "brand": "EliteFloors",
+      "price": 84.0,
+      "currency": "USD",
+      "dimensions": "60x60 cm",
+      "thickness": "10mm",
+      "finish": "Matte",
+      "material": "Ceramic",
+      "rating": 4.6,
+      "tags": [
+        "classic",
+        "grey",
+        "veined"
+      ],
+      "inStock": true,
+      "isFeatured": true
+    },
+    {
+      "id": "tile_006",
+      "title": "Earthy Ochre",
+      "slug": "earthy-ochre",
+      "description": "Hand-pressed textures meet modern firing techniques for a warm, lived-in feel.",
+      "image": "/images/tiles/earthy-ochre.jpg",
+      "category": "Terracotta",
+      "brand": "TerraFirm",
+      "price": 62.0,
+      "currency": "USD",
+      "dimensions": "40x40 cm",
+      "thickness": "15mm",
+      "finish": "Natural",
+      "material": "Clay",
+      "rating": 4.5,
+      "tags": [
+        "rustic",
+        "orange",
+        "natural"
+      ],
+      "inStock": true,
+      "isFeatured": false
+    },
+    {
+      "id": "tile_007",
+      "title": "Slate Midnight",
+      "slug": "slate-midnight",
+      "description": "Deep, textured porcelain that mimics natural cleft stone for dramatic modern spaces.",
+      "image": "/images/tiles/slate-midnight.jpg",
+      "category": "Porcelain",
+      "brand": "StoneArt",
+      "price": 38.0,
+      "currency": "USD",
+      "dimensions": "30x60 cm",
+      "thickness": "11mm",
+      "finish": "Textured",
+      "material": "Porcelain",
+      "rating": 4.7,
+      "tags": [
+        "slate",
+        "dark",
+        "industrial"
+      ],
+      "inStock": true,
+      "isFeatured": false
+    },
+    {
+      "id": "tile_008",
+      "title": "Travertine Breeze",
+      "slug": "travertine-breeze",
+      "description": "A timeless volcanic stone with natural aeration and a warm, porous visual rhythm.",
+      "image": "/images/tiles/travertine-breeze.jpg",
+      "category": "Natural Stone",
+      "brand": "TerraFirm",
+      "price": 115.0,
+      "currency": "USD",
+      "dimensions": "60x60 cm",
+      "thickness": "18mm",
+      "finish": "Honed",
+      "material": "Travertine",
+      "rating": 4.4,
+      "tags": [
+        "stone",
+        "beige",
+        "luxury"
+      ],
+      "inStock": true,
+      "isFeatured": true
+    },
+    {
+      "id": "tile_009",
+      "title": "Emerald Moroccan",
+      "slug": "emerald-moroccan",
+      "description": "Hand-crafted aesthetic with irregular edges and varied green shades for a bohemian kitchen vibe.",
+      "image": "/images/tiles/emerald-zellige.jpg",
+      "category": "Decorative",
+      "brand": "ArtisanTiles",
+      "price": 55.0,
+      "currency": "USD",
+      "dimensions": "10x10 cm",
+      "thickness": "8mm",
+      "finish": "Gloss",
+      "material": "Terracotta",
+      "rating": 4.6,
+      "tags": [
+        "green",
+        "kitchen",
+        "boho"
+      ],
+      "inStock": false,
+      "isFeatured": false
+    },
+    {
+      "id": "tile_010",
+      "title": "Nero Marquina Black",
+      "slug": "nero-marquina-black",
+      "description": "Deep black porcelain with striking white lightning veins. Bold and sophisticated.",
+      "image": "/images/tiles/nero-marquina.jpg",
+      "category": "Porcelain",
+      "brand": "StoneArt",
+      "price": 72.4,
+      "currency": "USD",
+      "dimensions": "60x120 cm",
+      "thickness": "11mm",
+      "finish": "High Gloss",
+      "material": "Porcelain",
+      "rating": 4.9,
+      "tags": [
+        "black",
+        "veined",
+        "bold"
+      ],
+      "inStock": true,
+      "isFeatured": true
+    },
+    {
+      "id": "tile_011",
+      "title": "Concrete Loft Grey",
+      "slug": "concrete-loft-grey",
+      "description": "Minimalist concrete-effect tile for seamless contemporary flooring.",
+      "image": "/images/tiles/concrete-loft.jpg",
+      "category": "Porcelain",
+      "brand": "UrbanSpace",
+      "price": 29.99,
+      "currency": "USD",
+      "dimensions": "60x60 cm",
+      "thickness": "10mm",
+      "finish": "Matte",
+      "material": "Porcelain",
+      "rating": 4.3,
+      "tags": [
+        "grey",
+        "industrial",
+        "office"
+      ],
+      "inStock": true,
+      "isFeatured": false
+    },
+    {
+      "id": "tile_012",
+      "title": "Royal Gold Mosaic",
+      "slug": "royal-gold-mosaic",
+      "description": "Glass mosaic sheets with real gold leaf accents for luxury spa environments.",
+      "image": "/images/tiles/gold-mosaic.jpg",
+      "category": "Mosaic",
+      "brand": "EliteFloors",
+      "price": 115.0,
+      "currency": "USD",
+      "dimensions": "30x30 cm",
+      "thickness": "6mm",
+      "finish": "Iridescent",
+      "material": "Glass",
+      "rating": 5.0,
+      "tags": [
+        "gold",
+        "luxury",
+        "spa"
+      ],
+      "inStock": true,
+      "isFeatured": true
+    }
+  ],
+  "categories": [
+    "Ceramic",
+    "Porcelain",
+    "Natural Stone",
+    "Terracotta",
+    "Decorative",
+    "Mosaic"
+  ]
+}
