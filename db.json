@@ -7,10 +7,8 @@
       "collection": "Premium Collection",
       "description": "A contemporary reinterpretation of classic Italian flooring. This tile features a sophisticated blend of burnt sienna terracotta fragments and creamy limestone aggregates set in a warm, neutral cement base. Engineered for high-traffic environments, it offers a slip-resistant matte finish that feels both organic and architecturally precise.",
       "images": [
-        "image_5861a2.png",
-        "/images/tiles/sienna-terrazzo-alt1.jpg",
-        "/images/tiles/sienna-terrazzo-alt2.jpg",
-        "/images/tiles/sienna-terrazzo-alt3.jpg"
+        "https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1598212620138-04f7b6058097?q=80&w=1000&auto=format&fit=crop"
       ],
       "category": "porcelain",
       "material": "Porcelain Enamel",
@@ -21,7 +19,10 @@
       "priceUnit": "per sq. meter",
       "currency": "USD",
       "inStock": true,
-      "features": ["CAD Files Available", "Eco-Certified"]
+      "features": [
+        "CAD Files Available",
+        "Eco-Certified"
+      ]
     },
     {
       "id": "tile_002",
@@ -30,8 +31,8 @@
       "collection": "Natural Stone Series",
       "description": "Luxurious Italian marble featuring distinct gold and grey veining. Perfect for creating an elegant, high-end atmosphere in residential or commercial spaces.",
       "images": [
-        "image_58619f.jpg",
-        "/images/tiles/calacatta-alt1.jpg"
+        "https://images.unsplash.com/photo-1615529328331-f8917597711f?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1595113316349-9fa4046a61fe?q=80&w=1000&auto=format&fit=crop"
       ],
       "category": "natural stone",
       "material": "Italian Marble",
@@ -42,7 +43,9 @@
       "priceUnit": "per sq. meter",
       "currency": "USD",
       "inStock": true,
-      "features": ["CAD Files Available"]
+      "features": [
+        "CAD Files Available"
+      ]
     },
     {
       "id": "tile_003",
@@ -51,8 +54,8 @@
       "collection": "Artisan Series",
       "description": "Hand-pressed artisan ceramic with a warm earthy tone. Each tile features unique textural variations that capture the essence of traditional craftsmanship.",
       "images": [
-        "/images/tiles/raw-sienna-main.jpg",
-        "/images/tiles/raw-sienna-detail.jpg"
+        "https://images.unsplash.com/photo-1615529151169-7b1ff50dc7f2?q=80&w=1000&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1523413184749-80590823577d?q=80&w=1000&auto=format&fit=crop"
       ],
       "category": "ceramic",
       "material": "Handmade Ceramic",
@@ -63,7 +66,9 @@
       "priceUnit": "per sq. meter",
       "currency": "USD",
       "inStock": true,
-      "features": ["Eco-Certified"]
+      "features": [
+        "Eco-Certified"
+      ]
     },
     {
       "id": "tile_004",
@@ -72,7 +77,7 @@
       "collection": "Modern Minimalist",
       "description": "A deep, non-reflective black porcelain. This full-body tile is designed for heavy-duty architectural applications requiring a sleek, monolithic appearance.",
       "images": [
-        "/images/tiles/obsidian-main.jpg"
+        "https://images.unsplash.com/photo-1534342357876-491359270a66?q=80&w=1000&auto=format&fit=crop"
       ],
       "category": "porcelain",
       "material": "Full Body Porcelain",
@@ -83,7 +88,10 @@
       "priceUnit": "per sq. meter",
       "currency": "USD",
       "inStock": true,
-      "features": ["CAD Files Available", "High Traffic Rated"]
+      "features": [
+        "CAD Files Available",
+        "High Traffic Rated"
+      ]
     },
     {
       "id": "tile_005",
@@ -92,7 +100,7 @@
       "collection": "Mosaic Collection",
       "description": "Vibrant Mediterranean-inspired pressed ceramic. Features a unique geometric layout that creates a dynamic visual rhythm on walls or floors.",
       "images": [
-        "/images/tiles/azure-main.jpg"
+        "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1000&auto=format&fit=crop"
       ],
       "category": "mosaic",
       "material": "Pressed Ceramic",
@@ -103,7 +111,9 @@
       "priceUnit": "per sq. meter",
       "currency": "USD",
       "inStock": true,
-      "features": ["Eco-Certified"]
+      "features": [
+        "Eco-Certified"
+      ]
     },
     {
       "id": "tile_006",
@@ -112,7 +122,7 @@
       "collection": "Featured Tiles",
       "description": "A refined Italian-inspired finish with deep grey veining and a soft matte surface, mimicking the natural elegance of Carrara marble.",
       "images": [
-        "/images/tiles/artisan-carrara.jpg"
+        "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1000&auto=format&fit=crop"
       ],
       "category": "ceramic",
       "material": "Glazed Ceramic",
@@ -123,7 +133,9 @@
       "priceUnit": "per sq. meter",
       "currency": "USD",
       "inStock": true,
-      "features": ["CAD Files Available"]
+      "features": [
+        "CAD Files Available"
+      ]
     },
     {
       "id": "tile_007",
@@ -132,7 +144,7 @@
       "collection": "Featured Tiles",
       "description": "Hand-pressed textures meet modern firing techniques for a warm, lived-in feel with a rich terracotta hue.",
       "images": [
-        "/images/tiles/earthy-ochre.jpg"
+        "https://images.unsplash.com/photo-1590272456521-1bbe160a18ce?q=80&w=1000&auto=format&fit=crop"
       ],
       "category": "terracotta",
       "material": "Terracotta",
@@ -143,7 +155,9 @@
       "priceUnit": "per sq. meter",
       "currency": "USD",
       "inStock": true,
-      "features": ["Eco-Certified"]
+      "features": [
+        "Eco-Certified"
+      ]
     },
     {
       "id": "tile_008",
@@ -152,7 +166,7 @@
       "collection": "Modern Minimalist",
       "description": "Deep, textured porcelain that mimics natural cleft stone for dramatic modern spaces and high durability.",
       "images": [
-        "/images/tiles/slate-midnight.jpg"
+        "https://images.unsplash.com/photo-1516550893923-42d28e5677af?q=80&w=1000&auto=format&fit=crop"
       ],
       "category": "porcelain",
       "material": "Full Body Porcelain",
@@ -163,7 +177,10 @@
       "priceUnit": "per sq. meter",
       "currency": "USD",
       "inStock": true,
-      "features": ["CAD Files Available", "Slip Resistant"]
+      "features": [
+        "CAD Files Available",
+        "Slip Resistant"
+      ]
     },
     {
       "id": "tile_009",
@@ -172,7 +189,7 @@
       "collection": "Natural Stone Series",
       "description": "A timeless volcanic stone with natural aeration and a warm, porous visual rhythm for classic interiors.",
       "images": [
-        "/images/tiles/travertine-breeze.jpg"
+        "https://images.unsplash.com/photo-1583329124403-125039327f30?q=80&w=1000&auto=format&fit=crop"
       ],
       "category": "natural stone",
       "material": "Natural Travertine",
@@ -183,7 +200,9 @@
       "priceUnit": "per sq. meter",
       "currency": "USD",
       "inStock": true,
-      "features": ["Eco-Certified"]
+      "features": [
+        "Eco-Certified"
+      ]
     },
     {
       "id": "tile_010",
@@ -192,7 +211,7 @@
       "collection": "Timber Look",
       "description": "Porcelain planks that perfectly replicate the grain and warmth of Scandinavian ash wood without the maintenance of timber.",
       "images": [
-        "/images/tiles/nordic-ash.jpg"
+        "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=1000&auto=format&fit=crop"
       ],
       "category": "porcelain",
       "material": "Glazed Porcelain",
@@ -203,7 +222,9 @@
       "priceUnit": "per sq. meter",
       "currency": "USD",
       "inStock": true,
-      "features": ["CAD Files Available"]
+      "features": [
+        "CAD Files Available"
+      ]
     },
     {
       "id": "tile_011",
@@ -212,7 +233,7 @@
       "collection": "Artisan Series",
       "description": "Handmade glazed tiles from Morocco, featuring high-gloss finishes and beautiful variations in emerald green tones.",
       "images": [
-        "/images/tiles/emerald-zellige.jpg"
+        "https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=1000&auto=format&fit=crop"
       ],
       "category": "ceramic",
       "material": "Glazed Clay",
@@ -223,7 +244,9 @@
       "priceUnit": "per sq. meter",
       "currency": "USD",
       "inStock": false,
-      "features": ["Eco-Certified"]
+      "features": [
+        "Eco-Certified"
+      ]
     },
     {
       "id": "tile_012",
@@ -232,7 +255,7 @@
       "collection": "Premium Collection",
       "description": "Delicate linear ribbing on a soft ivory ceramic base, perfect for creating textured feature walls in minimalist baths.",
       "images": [
-        "/images/tiles/ivory-linear.jpg"
+        "https://images.unsplash.com/photo-1616486341351-7025244f24c3?q=80&w=1000&auto=format&fit=crop"
       ],
       "category": "ceramic",
       "material": "Ceramic",
@@ -243,7 +266,9 @@
       "priceUnit": "per sq. meter",
       "currency": "USD",
       "inStock": true,
-      "features": ["CAD Files Available"]
+      "features": [
+        "CAD Files Available"
+      ]
     }
   ]
 }

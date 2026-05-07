@@ -28,7 +28,7 @@ const FeatureTiles = async () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {displayTiles.map((tile) => (
-            <Link href={`/tiles/${tile.id}`} key={tile.id} className="group">
+            <Link href={`/all-tiles/${tile.id}`} key={tile.id} className="group">
               <div className="bg-white border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="aspect-square overflow-hidden bg-gray-100">
                   <img
@@ -42,9 +42,14 @@ const FeatureTiles = async () => {
                   <p className="text-[10px] text-gray-400 uppercase tracking-wider mt-1">
                     {tile.material} • {tile.finish}
                   </p>
-                  <p className="text-[#A15D3F] font-bold mt-4">
-                    ${tile.price?.toFixed(2)} <span className="text-xs font-normal text-gray-400">/ m²</span>
-                  </p>
+                  <div className="flex justify-between items-center mt-4">
+                    <p className="text-[#A15D3F] font-bold">
+                      ${tile.price?.toFixed(2)} <span className="text-xs font-normal text-gray-400">/ m²</span>
+                    </p>
+                    <span className="text-[11px] font-bold uppercase tracking-tight text-gray-800 group-hover:text-[#A15D3F] transition-colors">
+                      View Details →
+                    </span>
+                  </div>
                 </div>
               </div>
             </Link>
@@ -52,7 +57,7 @@ const FeatureTiles = async () => {
         </div>
 
         <div className="text-center mt-14">
-          <Link href="/tiles" className="inline-block px-8 py-3 border border-[#8B4513] text-[#8B4513] text-xs font-bold uppercase tracking-widest hover:bg-[#8B4513] hover:text-white transition-colors">
+          <Link href="/all-tiles" className="inline-block px-8 py-3 border border-[#BC6C4D] text-[#BC6C4D] text-xs font-bold uppercase tracking-widest hover:bg-[#BC6C4D] hover:text-white transition-colors">
             View All Tiles →
           </Link>
         </div>

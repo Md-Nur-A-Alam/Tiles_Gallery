@@ -17,6 +17,13 @@ const SignIn = () => {
         formState: { errors, isSubmitting }
     } = useForm();
 
+    const handleGoogleLogin = async () => {
+        await authClient.signIn.social({
+            provider: "google",
+            callbackURL: "/",
+        });
+    };
+
     const onSubmit = async (data) => {
         try {
             const { data: res, error } = await authClient.signIn.email({
@@ -37,7 +44,7 @@ const SignIn = () => {
     };
 
     return (
-        <div className='mx-auto mt-20 '>
+        <div className='mx-auto mt-20 max-w-lg px-4'>
             <h2 className='text-center font-bold text-3xl'>TILE GALLERY</h2>
             <p className='text-sm text-center'>Architectural Excellence</p>
 
@@ -87,7 +94,7 @@ const SignIn = () => {
                 <button
                     type='submit'
                     disabled={isSubmitting}
-                    className="btn btn-primary mt-6"
+                    className="btn bg-[#BC6C4D] text-white border-none mt-6 hover:opacity-90 transition"
                 >
                     {isSubmitting ? "Logging in..." : "LOGIN"}
                 </button>
@@ -96,19 +103,7 @@ const SignIn = () => {
 
                 <button
                     type='button'
-                    onClick={async () => {
-                        try {
-                            const { error } = await authClient.signIn.social({
-                                provider: "google"
-                            });
-
-                            if (error) {
-                                toast.error("Google sign-in failed");
-                            }
-                        } catch {
-                            toast.error("Something went wrong");
-                        }
-                    }}
+                    onClick={handleGoogleLogin}
                     className="btn border-[#a0a0a0] bg-[#363636]"
                 >
                     <FcGoogle /> Sign in with Google

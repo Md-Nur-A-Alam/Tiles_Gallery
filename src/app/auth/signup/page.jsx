@@ -22,6 +22,13 @@ const SignUpPage = () => {
 
     const password = watch("password");
 
+    const handleGoogleLogin = async () => {
+        await authClient.signIn.social({
+            provider: "google",
+            callbackURL: "/",
+        });
+    };
+
     const onSubmit = async (data) => {
         try {
             const { data: res, error } = await authClient.signUp.email({
@@ -52,7 +59,11 @@ const SignUpPage = () => {
                 <h2 className='text-2xl text-center'>Create an Account</h2>
                 <p className='text-[11px] -mt-2 mb-4 text-center'>Join TileVerse to curate your architectural vision</p>
 
-                <button type='button' className="btn border-[#a0a0a0] bg-[#363636] w-full">
+                <button
+                    type='button'
+                    onClick={handleGoogleLogin}
+                    className="btn border-[#a0a0a0] bg-[#363636] w-full"
+                >
                     <FcGoogle /> Continue with Google
                 </button>
 
@@ -160,7 +171,7 @@ const SignUpPage = () => {
                 <button
                     type='submit'
                     disabled={isSubmitting}
-                    className="btn btn-primary mt-5 w-full uppercase"
+                    className="btn bg-[#BC6C4D] text-white border-none mt-5 w-full uppercase hover:opacity-90 transition"
                 >
                     {isSubmitting ? "Creating..." : "Create Account"}
                 </button>

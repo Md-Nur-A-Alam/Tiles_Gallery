@@ -22,11 +22,11 @@ const TileCard = ({ tile }) => {
         </p>
 
         <div className="flex justify-between items-center mt-6">
-          <p className="text-[#A15D3F] font-bold">
+          <p className="text-[#BC6C4D] font-bold">
             ${tile.price?.toFixed(2)} <span className="text-xs font-normal">/ m²</span>
           </p>
-          <Link href={`/tiles/${tile.id}`}>
-            <button className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-tight text-gray-800 group-hover:text-[#A15D3F] transition-colors">
+          <Link href={`/all-tiles/${tile.id}`}>
+            <button className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-tight text-gray-800 group-hover:text-[#BC6C4D] transition-colors">
               Details <ArrowRight size={14} />
             </button>
           </Link>

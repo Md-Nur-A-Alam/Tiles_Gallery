@@ -22,7 +22,7 @@ const Navbar = () => {
     const links =
         <>
             <li><Link href='/' className="hover:text-[#BC6C4D] transition">Home</Link></li>
-            <li><Link href='/tiles' className="hover:text-[#BC6C4D] transition">All Tiles</Link></li>
+            <li><Link href='/all-tiles' className="hover:text-[#BC6C4D] transition">All Tiles</Link></li>
             {session && (
                 <li><Link href='/profile' className="hover:text-[#BC6C4D] transition">My Profile</Link></li>
             )}
@@ -66,6 +66,15 @@ const Navbar = () => {
                         <span className="loading loading-dots loading-sm text-[#BC6C4D]"></span>
                     ) : session ? (
                         <>
+                            <div className="w-8 h-8 rounded-full overflow-hidden border border-[#BC6C4D]/20 bg-gray-100 hidden sm:block">
+                                {session.user?.image ? (
+                                    <img src={session.user.image} alt={session.user.name} className="w-full h-full object-cover" />
+                                ) : (
+                                    <div className="w-full h-full flex items-center justify-center text-[#BC6C4D] text-xs font-bold uppercase">
+                                        {session.user?.name?.charAt(0) || '?'}
+                                    </div>
+                                )}
+                            </div>
                             <span className="text-sm text-[#4A4A4A] hidden md:inline font-medium truncate max-w-[140px]">
                                 {session.user?.name || session.user?.email}
                             </span>
