@@ -3,7 +3,7 @@
 **Tiles Gallery** is a premium web application designed for architects, interior designers, and homeowners to explore and curate a high-end collection of architectural tiles. From Italian marble to artisan ceramics, the platform offers a sophisticated interface for surface discovery.
 
 ## 🔗 Live Demo
-[View Live Site](https://tiles-gallery-v1.vercel.app/) *(Placeholder)*  
+[View Live Site](https://tiles-gallery-flax.vercel.app/)
 **GitHub Repository:** [Md-Nur-A-Alam/Tiles_Gallery](https://github.com/Md-Nur-A-Alam/Tiles_Gallery)
 
 ---
