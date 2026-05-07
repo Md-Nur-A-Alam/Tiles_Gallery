@@ -10,7 +10,7 @@ const AllTilesPage = () => {
         const fetchTiles = async () => {
             try {
                 // Using the proxy route defined in next.config.mjs
-                const res = await fetch('/api/proxy/products');
+                const res = await fetch('/api/products');
                 const data = await res.json();
                 setTiles(Array.isArray(data) ? data : data.products || []);
             } catch (err) {

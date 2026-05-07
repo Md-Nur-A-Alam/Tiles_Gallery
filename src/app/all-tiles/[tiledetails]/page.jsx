@@ -16,7 +16,7 @@ const TileDetailsPage = () => {
   useEffect(() => {
     const fetchTile = async () => {
       try {
-        const res = await fetch(`/api/proxy/products/${tileId}`);
+        const res = await fetch(`/api/products/${tileId}`);
         if (!res.ok) throw new Error('Tile not found');
         const data = await res.json();
         setTile(data);

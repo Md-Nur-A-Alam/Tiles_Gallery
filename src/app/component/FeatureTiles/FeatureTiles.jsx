@@ -1,17 +1,10 @@
 import Link from 'next/link';
-
-const getTiles = async () => {
-  const res = await fetch(`${process.env.JSON_DB_URI || 'http://localhost:5004/products'}`, {
-    cache: 'no-store',
-  });
-  return res.json();
-};
+import { getProducts } from '@/lib/getProducts';
 
 const FeatureTiles = async () => {
   let tiles = [];
   try {
-    const data = await getTiles();
-    tiles = Array.isArray(data) ? data : data.products || [];
+    tiles = await getProducts();
   } catch (err) {
     console.error('Failed to fetch featured tiles:', err);
   }
