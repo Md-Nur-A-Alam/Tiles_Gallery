@@ -1,28 +1,26 @@
 import dns from "node:dns";
-dns.setServers(['8.8.8.8','8.8.4.4'])
+dns.setServers(['8.8.8.8', '8.8.4.4']);
 
 import { betterAuth } from "better-auth";
 import { MongoClient } from "mongodb";
 import { mongodbAdapter } from "better-auth/adapters/mongodb";
 
-const client = new MongoClient(process.env.AUTH_DB_URI);
+// Use a global variable to prevent multiple connections in development
+let client;
+if (!global._mongoClient) {
+    client = new MongoClient(process.env.AUTH_DB_URI);
+    global._mongoClient = client.connect();
+}
+const clientPromise = global._mongoClient;
 
-// Connect once and reuse the same promise across all requests (singleton pattern)
-const clientPromise = client.connect();
-
-await clientPromise;
-const db = client.db("Nur_PH13_A8_tiles");
+const client_connected = await clientPromise;
+const db = client_connected.db("Nur_PH13_A8_tiles");
 
 export const auth = betterAuth({
+    database: mongodbAdapter(db),
     emailAndPassword: {
         enabled: true,
     },
-    trustedOrigins: [
-        process.env.BETTER_AUTH_URL || "http://localhost:3000",
-    ],
-    database: mongodbAdapter(db, {
-        client,
-    }),
     socialProviders: {
         google: {
             clientId: process.env.GOOGLE_CLIENT_ID,
@@ -33,4 +31,8 @@ export const auth = betterAuth({
             clientSecret: process.env.GITHUB_CLIENT_SECRET,
         },
     },
+    baseURL: process.env.BETTER_AUTH_URL || "http://localhost:3000",
+    trustedOrigins: [
+        process.env.BETTER_AUTH_URL || "http://localhost:3000",
+    ],
 });
